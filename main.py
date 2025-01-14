@@ -174,6 +174,64 @@
 #------------------------------------------------------------
 #------------------------------------------------------------
 
+#EX TP4 Operator et condition avancer
+#------------------------------------------------------------
+
+#------------------------------------------------------------
+# Exercice 1 : verifier si un caracter est une voyelle
+#------------------------------------------------------------
+
+# lettre = input("tapper une lettre ").lower()
+# if lettre in "aeiou":
+#     print("la lettre est une voyelle")  
+# else:
+#     print("la lettre n'est pas une voyelle")
+
+
+#------------------------------------------------------------
+# Exercice 2 : determier le signe d'un produit
+#------------------------------------------------------------
+
+# num1 = int(input("tapper le premier chifre "))
+# num2 = int(input("tapper le deuxième chifre "))
+# num3 = int(input("tapper le troisième chifre "))
+# if num1 * num2 * num3 > 0:
+#     print("le produit est positif")
+# elif num1 * num2 * num3 < 0:
+#     print("le produit est négatif")
+# else:
+#     print("le produit est nul")
+
+#------------------------------------------------------------
+# Exercice 3 : Comparer trois nombres
+#------------------------------------------------------------
+
+# num1 = int(input("tapper le premier chifre "))
+# num2 = int(input("tapper le premier chifre "))
+# num3 = int(input("tapper le premier chifre "))
+
+# if num1 <= num2 and num2 <= num3:
+#     if num2 <= num3:
+#         print(num1 , num2 , num3)
+#     else:
+#         print(num1 , num3 , num2)
+# elif num2 <= num1 and num2 <= num3:
+#     if num1 <= num3:
+#         print(num2 , num1 , num3)
+#     else:
+#         print(num2 , num3 , num1)
+# elif num3 <= num1 and num3 <= num2:
+#     if num1 <= num2:
+#         print(num3 , num1 , num2)
+#     else:
+#         print(num3 , num2 , num1)
+# else:
+#     print("erreur")
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+#------------------------------------------------------------
+
 #EX TP4  linguer d'une chain
 #------------------------------------------------------------
 # Exercice 1 : Longueur d'une chaine
