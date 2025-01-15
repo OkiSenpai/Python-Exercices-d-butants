@@ -1,4 +1,5 @@
-
+import math
+import random
 # *** Exercice 10 : Jeu du plus grand ou plus petit ***
 
 # chifre = 33
@@ -233,25 +234,116 @@
 # Exercice 4 : Mod de passe securisé
 #------------------------------------------------------------
 
-password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
-a = 0
-x = password.isdigit
-for i in password:
-    a+=1
-# if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
-#     print("le mot de passe est securisé")
-# else:
-#     print("le mot de passe n'est pas securisé ")
+# password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
+# a = 0
+# x = password.isdigit
+# for i in password:
+#     a+=1
+# # if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
+# #     print("le mot de passe est securisé")
+# # else:
+# #     print("le mot de passe n'est pas securisé ")
 
-if a >= 8:
-    for number in password:
-        if number.isdigit():
-            for letreMaj in password:
-                if letreMaj.isupper():
-                    print("le mot de passe est securisé")
-                    break
-else:
-     print("le mot de passe n'est pas securisé ")
+# if a >= 8:
+#     for number in password:
+#         if number.isdigit():
+#             for letreMaj in password:
+#                 if letreMaj.isupper():
+#                     print("le mot de passe est securisé")
+#                     break
+# else:
+#      print("le mot de passe n'est pas securisé ")
+
+#------------------------------------------------------------
+# Exercice 5 : Verifier un si le triangle est rectangle
+#------------------------------------------------------------
+# a = int(input("tapper un chifre "))
+# b = int(input("tapper un chifre "))
+# c = int(input("tapper un chifre "))
+
+# if a * a + b * b == c * c or a * a + c * c == b * b or b * b + c * c == a * a:
+#     print("le triangle est rectangle")
+# else:
+#     print("le triangle n'est pas rectangle")
+
+
+#------------------------------------------------------------
+# Exercice 6 : nombre magique
+#------------------------------------------------------------
+
+# a = int(input("tapper un chifre "))
+# b = random.randint(1, 100)
+# if a == b:
+#     print("bravo")
+# elif a > b:
+#     print("trop grand")
+# else:
+#     print("trop petit")
+
+
+#------------------------------------------------------------
+# Exercice 7 : Amende de bibliothèque
+#------------------------------------------------------------
+
+# retard = int(input("vous avez de retard de combien jour? "))
+# if retard <= 5:
+#     print("le prix de retard ets " , retard * 1)
+# elif retard <= 10:
+#     print("le prix de retard est " , retard * 2)
+# elif retard > 10:
+#     print("le prix de retard etst " , retard *5)
+# else:
+#     print("Error")
+
+
+
+#------------------------------------------------------------
+# Exercice 8 : Amende de bibliothèque
+#------------------------------------------------------------
+# zero = "zero"
+# un = "un"
+# deux = "deux"
+# trois = "trois"
+# quatre = "quatre"
+# cinq = "cinq"
+# six = "six"
+# sept = "sept"
+# huit = "huit"
+# neuf = "neuf"
+
+# chifre = int(input("tapper un chiffre de 0 à 9  "))
+# if chifre == 0:
+#     print(zero)
+# elif chifre == 1:
+#     print(un)
+# elif chifre == 2:
+#     print(deux)
+# elif chifre == 3:
+#     print(trois)
+# elif chifre == 4:
+#     print(quatre)
+# elif chifre == 5:
+#     print(cinq)
+# elif chifre == 6:
+#     print(six)
+# elif chifre == 7:
+#     print(sept)
+# elif chifre == 8:
+#     print(huit)
+# elif chifre == 9:
+#     print(neuf)
+
+
+
+#------------------------------------------------------------
+# Exercice 9 : annnéz palindrome
+#------------------------------------------------------------
+
+anee = int(input("tapper une année "))
+
+
+
+
 
 
 
