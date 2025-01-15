@@ -174,6 +174,92 @@
 #------------------------------------------------------------
 #------------------------------------------------------------
 
+#EX TP4 Operator et condition avancer
+#------------------------------------------------------------
+
+#------------------------------------------------------------
+# Exercice 1 : verifier si un caracter est une voyelle
+#------------------------------------------------------------
+
+# lettre = input("tapper une lettre ").lower()
+# if lettre in "aeiou":
+#     print("la lettre est une voyelle")  
+# else:
+#     print("la lettre n'est pas une voyelle")
+
+
+#------------------------------------------------------------
+# Exercice 2 : determier le signe d'un produit
+#------------------------------------------------------------
+
+# num1 = int(input("tapper le premier chifre "))
+# num2 = int(input("tapper le deuxième chifre "))
+# num3 = int(input("tapper le troisième chifre "))
+# if num1 * num2 * num3 > 0:
+#     print("le produit est positif")
+# elif num1 * num2 * num3 < 0:
+#     print("le produit est négatif")
+# else:
+#     print("le produit est nul")
+
+#------------------------------------------------------------
+# Exercice 3 : Comparer trois nombres
+#------------------------------------------------------------
+
+# num1 = int(input("tapper le premier chifre "))
+# num2 = int(input("tapper le premier chifre "))
+# num3 = int(input("tapper le premier chifre "))
+
+# if num1 <= num2 and num2 <= num3:
+#     if num2 <= num3:
+#         print(num1 , num2 , num3)
+#     else:
+#         print(num1 , num3 , num2)
+# elif num2 <= num1 and num2 <= num3:
+#     if num1 <= num3:
+#         print(num2 , num1 , num3)
+#     else:
+#         print(num2 , num3 , num1)
+# elif num3 <= num1 and num3 <= num2:
+#     if num1 <= num2:
+#         print(num3 , num1 , num2)
+#     else:
+#         print(num3 , num2 , num1)
+# else:
+#     print("erreur")
+
+
+#------------------------------------------------------------
+# Exercice 4 : Mod de passe securisé
+#------------------------------------------------------------
+
+password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
+a = 0
+x = password.isdigit
+for i in password:
+    a+=1
+# if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
+#     print("le mot de passe est securisé")
+# else:
+#     print("le mot de passe n'est pas securisé ")
+
+if a >= 8:
+    for number in password:
+        if number.isdigit():
+            for letreMaj in password:
+                if letreMaj.isupper():
+                    print("le mot de passe est securisé")
+                    break
+else:
+     print("le mot de passe n'est pas securisé ")
+
+
+
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+#------------------------------------------------------------
+
 #EX TP4  linguer d'une chain
 #------------------------------------------------------------
 # Exercice 1 : Longueur d'une chaine

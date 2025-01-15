@@ -134,16 +134,18 @@
 # else:
 #     print(str(chifre) + " n'est pas divisable ni avec 3 ni avec 5")
 
-chifre = 33
+# chifre = 33
 
-devin = int(input("deviner un chifre entre 1 et 50 "))
+# devin = int(input("deviner un chifre entre 1 et 50 "))
 
 
 
-while devin != chifre:
-    if devin > chifre:
-     devin = int(input("plus grand , resseyer "))
-    elif devin < chifre:
-       devin = int(input("plus petit, resseyer "))
-    else:
-        print( " vous avez deviné, le chifre est  " + str(chifre)) 
+# while devin != chifre:
+#     if devin > chifre:
+#      devin = int(input("plus grand , resseyer "))
+#     elif devin < chifre:
+#        devin = int(input("plus petit, resseyer "))
+#     else:
+#         print( " vous avez deviné, le chifre est  " + str(chifre))
+
+
