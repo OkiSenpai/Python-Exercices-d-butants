@@ -1,4 +1,5 @@
-
+import math
+import random
 # *** Exercice 10 : Jeu du plus grand ou plus petit ***
 
 # chifre = 33
@@ -233,25 +234,25 @@
 # Exercice 4 : Mod de passe securisé
 #------------------------------------------------------------
 
-# password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
-# a = 0
-# x = password.isdigit
-# for i in password:
-#     a+=1
-# # if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
-# #     print("le mot de passe est securisé")
-# # else:
-# #     print("le mot de passe n'est pas securisé ")
-
-# if a >= 8:
-#     for number in password:
-#         if number.isdigit():
-#             for letreMaj in password:
-#                 if letreMaj.isupper():
-#                     print("le mot de passe est securisé")
-#                     break
+password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
+a = 0
+x = password.isdigit
+for i in password:
+    a+=1
+# if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
+#     print("le mot de passe est securisé")
 # else:
-#      print("le mot de passe n'est pas securisé ")
+#     print("le mot de passe n'est pas securisé ")
+
+if a >= 8:
+    for number in password:
+        if number.isdigit():
+            for letreMaj in password:
+                if letreMaj.isupper():
+                    print("le mot de passe est securisé")
+                    break
+else:
+     print("le mot de passe n'est pas securisé ")
 
 # print(a)
 
