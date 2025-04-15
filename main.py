@@ -233,27 +233,27 @@
 # Exercice 4 : Mod de passe securisé
 #------------------------------------------------------------
 
-password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
-a = 0
-x = password.isdigit
-for i in password:
-    a+=1
-# if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
-#     print("le mot de passe est securisé")
+# password = input("mot de pass doit contnire au moin 8 lettre, une lettre majisucle et au moin un chifre ")
+# a = 0
+# x = password.isdigit
+# for i in password:
+#     a+=1
+# # if a >= 8 and any(number.isdigit() for number in password) and  any(lettreMaj.isupper() for lettreMaj in password ):
+# #     print("le mot de passe est securisé")
+# # else:
+# #     print("le mot de passe n'est pas securisé ")
+
+# if a >= 8:
+#     for number in password:
+#         if number.isdigit():
+#             for letreMaj in password:
+#                 if letreMaj.isupper():
+#                     print("le mot de passe est securisé")
+#                     break
 # else:
-#     print("le mot de passe n'est pas securisé ")
+#      print("le mot de passe n'est pas securisé ")
 
-if a >= 8:
-    for number in password:
-        if number.isdigit():
-            for letreMaj in password:
-                if letreMaj.isupper():
-                    print("le mot de passe est securisé")
-                    break
-else:
-     print("le mot de passe n'est pas securisé ")
-
-
+# print(a)
 
 
 #------------------------------------------------------------
@@ -278,12 +278,18 @@ else:
 #------------------------------------------------------------
 # s = input("tapper qqch en majuscules")
 # print(s.lower())
-#------------------------------------------------------------
+# ------------------------------------------------------------
 # Exercice 4 : compter les occurrences d'un caractere
-#------------------------------------------------------------
+# ------------------------------------------------------------
 # mot = input("tapper le mot ")
 # caracter = input("tapper une letre")
 # tableu = list(mot)
+
+# 1ere methode 
+# print(mot.count(caracter))
+
+#2eme methode 
+
 # count = 0
 # for i in tableu:
 #     if caracter == i:
@@ -293,6 +299,9 @@ else:
 #------------------------------------------------------------
 # Exercice 5 : Verifier si une chaine contient un mot
 #------------------------------------------------------------
+# 1ere method :
+# 1ere method :
+# 1ere method :
 # s= input("tapper une phrase ")
 # mot = input("tapper un mot ")
 # array = s.split()
@@ -300,22 +309,29 @@ else:
 #     print("le mot est dans la phrase")
 # else:
 #     print("le mot n'est pas dans la phrase")
+
+#2eme methode 
+#2eme methode 
+#2eme methode 
+# s= input("tapper une phrase ")
+# mot = input("tapper un mot ")
+# print(mot in s)
+
+
+
 #------------------------------------------------------------
 # Exercice 6 : Remplacer un mot dans une chaine
 #------------------------------------------------------------
 # s = input("tapper une phrase ")
 # oldMot = input("tapper un ancien mot ")
 # newMot = input("tapper un new mot ")
-# array = s.split()
-# print(array)
-# array.insert(0,newMot)
-# array.remove(oldMot)
-# print(array)
+
+# print(s.replace(oldMot , newMot))
 #------------------------------------------------------------
 # Exercice 7 : Afficher les 5 caracteres d'une chaine
 #------------------------------------------------------------
 # s = input("tapper une chaine ")
-# print(s[3:9])
+# print(s[3:8])
 #------------------------------------------------------------
 # Exercice 8 : verifier si une chaine est un palindrome
 #------------------------------------------------------------
@@ -431,3 +447,43 @@ else:
 # list2 = input("tapper encore une list")
 # list3 = list1 + list2
 # print(list3)
+
+
+
+#------------------------------------------------------------
+# Exercice 10 : fusioner deux list
+#------------------------------------------------------------
+
+# texte = "ja sam kralj";
+
+# print("ja" in texte)
+
+# print(texte[::-1])
+
+# some = 0;
+
+# for i in texte:
+#     some += 1
+# print(some)
+
+#KeyError: 'username'
+#KeyError: 'username'
+#KeyError: 'username'
+# user_info = {"name": "Alice", "age": 30}
+# print(user_info["username"])
+
+#IndexError: list index out of range
+#IndexError: list index out of range
+#IndexError: list index out of range
+# numbers = [1, 2, 3]
+# print(numbers[5])
+
+list = []
+n = input("donne moi le nombre des ellemoent des list").split(",")
+
+# for i in range(n):
+#     list +=[int(input ("donnes moi un chiffre"))]
+# print(list)
+
+for i in n:
+    print(i)
