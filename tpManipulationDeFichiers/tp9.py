@@ -108,3 +108,44 @@
 #     print(f"Le mot {mot} est la.")
 # else:
 #     print(f"Le mot {mot} nest pas la.")
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+
+# Exercice 9 : Fichier inversé
+# Lis le contenu de courses.txt et écris-le à l’envers (du bas vers le haut) dans un
+# fichier courses_inverse.txt
+
+# with open("courses.txt" , "r") as f:
+#     list = f.read()
+#     for i in range( len(list) -1 , -1, -1):
+#         print(list[i])
+
+
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+
+
+# Exercice 10 : Sauvegarder des nombres
+# Demande à l’utilisateur 5 nombres entiers et écris-les (un par ligne) dans un fichier
+# nombres.txt.
+
+# with open("numbers.txt","w") as a:
+#     list = []
+#     counter = 1
+#     for i in range(5):
+#         nubers = int(input(f"tap  {counter} chiffre : "))
+#         counter += 1 
+#         a.write( f" {nubers} \n"  ) 
+    
+
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+
+
+# Exercice 11 : Lire des nombres et calculer la somme
+# Lis le fichier nombres.txt et calcule la somme des nombres contenus.
+
+
