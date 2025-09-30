@@ -116,7 +116,7 @@
 # Lis le contenu de courses.txt et écris-le à l’envers (du bas vers le haut) dans un
 # fichier courses_inverse.txt
 
-# with open("courses.txt" , "r") as f:
+# with open("numbers.txt" , "r") as f:
 #     list = f.read()
 #     for i in range( len(list) -1 , -1, -1):
 #         print(list[i])
@@ -148,4 +148,36 @@
 # Exercice 11 : Lire des nombres et calculer la somme
 # Lis le fichier nombres.txt et calcule la somme des nombres contenus.
 
+# with open("numbers.txt" , "r") as a:
+#     items = a.readlines()
+#     count= 0
+#     for i in items:
+#         count += int(i)
+        
+#     print(count)
+
+
+#------------------------------------------------------------
+#------------------------------------------------------------
+
+# Exercice 12 : Trier un fichier de nombres
+#  Lis le fichier nombres.txt, trie les nombres et sauvegarde-les dans un fichier
+#  nombres_tries.txt
+
+with open("numbers.txt" , "r") as a:
+    numbers =  a.readlines()
+   
+    first =  numbers[0]
+    list = []
+    if numbers:
+        for i in numbers:
+            if i < first:
+                first = i
+            list.append(first)
+            numbers.remove(first)
+            first = numbers[0]
+            
+        
+        
+    print(list)
 
