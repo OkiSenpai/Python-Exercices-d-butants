@@ -18,11 +18,6 @@ for i in list:
         b[key] = [float(i[2])]
 
 
-max
-
-
-
-
 for key , value in b.items():  
     res = 0
     big = value[0]
