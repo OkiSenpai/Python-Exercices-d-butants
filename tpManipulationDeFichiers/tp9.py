@@ -164,20 +164,47 @@
 #  Lis le fichier nombres.txt, trie les nombres et sauvegarde-les dans un fichier
 #  nombres_tries.txt
 
-with open("numbers.txt" , "r") as a:
-    numbers =  a.readlines()
-   
-    first =  numbers[0]
-    list = []
-    if numbers:
-        for i in numbers:
-            if i < first:
-                first = i
-            list.append(first)
-            numbers.remove(first)
-            first = numbers[0]
-            
-        
-        
-    print(list)
+# ma maniere
+
+# with open("numbers.txt" , "r") as a:
+#     numbers =  a.readlines()
+    
+#     list1 = []
+#     list2 =[]
+    
+#     for i in numbers:
+#          list1.append(int(i.strip()))
+#     print(list1)
+#     while list1:
+#         n = list1[0]
+#         for i in list1:
+#                 if n > i:
+#                     n = i
+                    
+#         list2.append(n)
+#         list1.remove(n)
+                
+           
+
+#     with open("nombres_tries.txt" , "w") as f:
+#          f.write(f"{list2}")
+         
+# la facone de souleiman
+
+with open("numbers.txt" , "r") as f:
+    n =  f.readlines()
+    numbers = int(n)
+    print(numbers)
+
+
+
+for i in range(len(numbers)):
+    for a in range(len(numbers)-1):
+        if numbers[i] < numbers[a]:
+            n = numbers[i]
+            numbers[i]= numbers[a]
+            numbers[a] = n
+print(numbers)
+
+
 
